@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>My Tasks</h1>
+            <p>Plan your day, achieve your goals.</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <span id="totalCount">0</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <span id="completedCount">0</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <span id="pendingCount">0</span>
+            </div>
+        </div>
+
+        <div class="task-input">
+            <input type="text" id="taskInput"
+                placeholder="Enter a new task...">
+            <button id="addBtn">+ Add Task</button>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <div class="progress-section">
+            <p id="progressText">0 of 0 tasks completed</p>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Stay organized. Stay productive.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
